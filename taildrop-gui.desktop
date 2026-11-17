@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Taildrop to Mac
+Comment=Drag and drop files from Ubuntu to Mac via Tailscale
+Exec=taildrop-gui %F
+Icon=send-to-symbolic
+Type=Application
+Terminal=false
+Categories=Network;FileTransfer;
+StartupNotify=true

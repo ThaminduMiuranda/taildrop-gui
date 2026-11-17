@@ -1,0 +1,23 @@
+[project]
+name = "taildrop-gui"
+version = "0.1.0"
+description = "Simple drag-and-drop Tailscale Taildrop GUI tool for sending files from Ubuntu to Mac"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+taildrop-gui = "taildrop_gui.app:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+python-preference = "only-system"
