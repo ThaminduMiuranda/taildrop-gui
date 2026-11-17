@@ -9,7 +9,7 @@
 
 [![Release](https://img.shields.io/github/v/release/ThaminduMiuranda/taildrop-gui?style=flat-square&color=3584e4)](https://github.com/ThaminduMiuranda/taildrop-gui/releases) [![License: MIT](https://img.shields.io/github/license/ThaminduMiuranda/taildrop-gui?style=flat-square&color=2ec27e)](LICENSE) [![UI: GTK4 + Libadwaita](https://img.shields.io/badge/UI-GTK4%20%2B%20Libadwaita-334155?style=flat-square)](src/taildrop_gui/app.py) [![Tailscale](https://img.shields.io/badge/Tailscale-Taildrop-334155?style=flat-square)](https://tailscale.com/kb/1106/taildrop)
 
-[Features](#features) · [Requirements](#requirements) · [Install](#install) · [Usage](#usage) · [License](#license)
+[Features](#features) · [Requirements](#requirements) · [Install](#install) · [Usage](#usage) · [Security](#security) · [License](#license)
 
 </div>
 
@@ -71,6 +71,10 @@ You can also pre-stage files or folders directly from the terminal:
 ```bash
 taildrop-gui /path/to/document.pdf /path/to/folder
 ```
+
+## Security
+
+`taildrop-gui` is verified with an automated red-team test suite running against simulated virtual peers and isolated temporary filesystems (113 checks covering target allowlisting, symlink and special-file rejection, subprocess argument safety, and UI text sanitization), with zero external PyPI runtime dependencies. See [`SECURITY.md`](SECURITY.md) for the security policy and reporting instructions.
 
 ## License
 
